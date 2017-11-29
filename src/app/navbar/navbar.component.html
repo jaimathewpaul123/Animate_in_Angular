@@ -1,0 +1,49 @@
+<div class="nav_wrapper">
+  <nav class="navbar navbar-toggleable-md navbar-light container_nav" [ngStyle]="nav_style">
+    <button class="navbar-toggler navbar-toggler-right navbar_btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" [ngStyle]="hamburger_icon_style"></span>
+    </button>
+    <a class="navbar-brand" routerLink="/home">
+      <img id="logo_image" [src]="logo_src">
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="navbar-nav ml-auto mt-2 mt-md-0 nav_wrap">
+        <div class="nav-item links">
+          <a class="nav-link cat_links" routerLink="/about-us">ABOUT US</a>
+        </div>
+        <div class="nav-item links">
+          <a  class="nav-link cat_links"  routerLink="/our-network">OUR NETWORK</a>
+        </div>
+        <div class="nav-item links ">
+          <a  class="nav-link cat_links" routerLink="/newsroom">NEWSROOM</a>
+        </div>
+        <div class="nav-item links  hidden_item">
+          <a class="nav-link cat_links" style="padding-right: 0; cursor: default">CONNECT</a>
+        </div>
+        <div class="nav-item links">
+          <a  class="nav-link cat_links"routerLink="/careers">CAREERS</a>
+        </div>
+        <div class="nav-item links last_item">
+          <a class="nav-link cat_links"  routerLink="/contact-us">CONTACT US</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div id="subnav_overlay" (mouseenter)="continue_show_subnavbar($event)" (mouseleave)="hide_subnavbar($event)">
+    <div class="subnav_overlay_padding">
+      <div class="image_container">
+        <img id="sticky" class="navbar_image" [src]="sticky_img">
+        <img id="faded" class="navbar_image" [src]="faded_img">
+      </div>
+      <div class="subcontent_container">
+        <div class="subcontent_link_container" *ngFor="let links of active_links; let i = index;" [ngStyle]="border_top(i)" (mouseenter)="enlarge_link($event)" (mouseleave)="shrink_link($event)" routerLink="{{links.link}}" fragment="{{links.fragment}}" (click)="hide_subnavbar($event)">
+          <span class="subcontent_links">{{links.item}}</span>
+        </div>
+      </div>
+      <div id="subnav_triangle">
+      </div>
+    </div>
+  </div>
+ --></div>

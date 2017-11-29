@@ -1,0 +1,69 @@
+<div class="top_container" name="partners">
+  <div class="top_banner_image" id="poster_1">
+  </div>
+  <div class="black_overlay" id="overlay_top">
+    <div class="text_on_poster animatedParent"  id="text_top" > 
+      <div class="text_on_poster_div repeat animated justIn">
+          <h2 >Collaborate with us</h2>
+          <p >We are reinventing the future of smart farming.</p>
+      </div>      
+    </div>
+  </div>
+</div>
+<div class="our_partner_container">
+  <div class="section animatedParent " data-appear-top-offset='-200' id="partners" name="story">
+    <div class="title animated justIn">
+      Our Partners
+    </div>
+    <div class="content animated justIn" id="mission_content" [innerHtml]="partners_content">
+    </div>
+    <div class="content animated justIn" id="vision_content" [innerHtml]="partners_content2">
+    </div>
+    <div class="team_row">
+      <div class="circle_shadow" *ngFor="let img of partners_img">
+        <img src="{{img}}" id="CEO_image">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="partner_with_us_container"  >
+  <div class="banner_image" id="partner_with_us">
+      <div class="black_overlay" id="overlay_top"></div>
+      <div class="partner_us_message animatedParent" data-sequence='1000' data-appear-top-offset='-200'>
+          <div id="partner_title" class="title animated justIn" data-id='1'>
+            {{bottom_text}}
+          </div>
+          <div class="text_on_poster_content animated justIn" data-id='1' [innerHtml]="bottom_text_content">
+          </div>
+        </div>
+  </div>
+</div>
+<div class="board_memebers_container" id="cont_2">
+    <div class="section animatedParent" id="board" name="story">
+        <div class="title animated justIn" >
+          Board Of Directors
+        </div>
+        <div class="team_row_2">
+          <div *ngFor="let member of board_members; let i = index;" class="image_container">
+            <img src="{{member.image}}" class="team_image">
+            <div class="content team_name">
+              {{member.name}}
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="investment_container" id="cont_2">  
+  <div id="investments" class="investment_wrapper animatedParent" data-sequence='500'>
+    <img src="/assets/images/our_network_image1.jpg" id="our_story_image" class="animated justIn " data-id='1'>
+    <div class="investment_content ">
+      <div class="title investment_text animated justIn " data-id='2'>
+        Investors
+      </div>
+      <div class="content investment_text investment_padding  animated justIn " data-id='2' [innerHtml]="investment_content">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer>
+</app-footer>

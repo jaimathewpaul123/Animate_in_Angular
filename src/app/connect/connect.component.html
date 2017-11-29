@@ -1,0 +1,45 @@
+<div>
+  <div class="top_container" >
+    <div class="banner_image">
+    </div>
+    <div class="black_overlay" id="overlay_top">
+      <div class="text_on_poster "  id="text_top" > 
+        <div class="text_on_poster_div ">
+            <h2 >Join us if you are passionate</h2>
+            <p >to bring the next impact on the Agritech.</p>
+        </div>      
+      </div>
+    </div>
+  </div>
+ <div class="join_us_container">
+   <div class="title">Join Us</div>
+    <div class="content">
+      Why Farmkart? Because we are more than just a 9 to 5 job. We are a cool bunch of people who strive to break the mundanity of corporate life. We are believers with a passion to bring a change. We want to play a pivoting role in enhancing the lives of farmers, and we know we will need you.
+    </div>
+ </div>
+ <div class="carrer_container">
+   <div class="careers_wrapper">
+      <img src="/assets/images/careers_image1.jpg" id="careers_image">
+      <div class="careers_content">
+        <div class="content careers_text careers_padding">
+          Farmkart is not a workplace, it’s your innovation hub. We care to contribute, share to grow, and passionately work to create a long lasting impact. If you think you can work with a dynamic team in a rapidly growing company, write back to us. We are accepting CVs in all formats as long as they sound human! Cheers!
+        </div>
+      </div>
+    </div>
+ </div>
+  <div class="positions_container">
+    
+    <div class="title" >Positions</div>
+    <div class="positions_wrapper">
+      <div *ngFor="let job of careers" class="position_container">
+        <div class="job_title_prev">{{job.Title_prev}}</div>
+        <div class="job_desc_prev">{{job.Description_prev}}</div>
+        <div class="btn" routerLink="/jobs" fragment="{{job.Reference}}" >
+          View Details
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer>
+</app-footer>

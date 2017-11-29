@@ -1,0 +1,56 @@
+<div *ngIf="!full_blog" class="wrapper">
+  <div *ngFor="let blog of blogs; let i = index;" class="blog_container">
+    <img src="{{blog.img_square}}" class="blog_img" routerLink="/blogs" fragment="{{blog.reference}}">
+    <div class="blog_prev_container">
+      <div class="prev_title" routerLink="/blogs" fragment="{{blog.reference}}">{{blog.title_shortened}}</div>
+      <div class="prev_content" [innerHtml]="blog.content_shortened">
+      </div>
+      <div class="links_container">
+        <div class="link">
+          <a href = "{{fb_links[i]}}" target="_blank">
+            <img src="./assets/images/icons/facebook_ic_small.png" class="link_icon">
+          </a>
+        </div>
+        <div class="link">
+          <a [href]="'https://twitter.com/intent/tweet?url=' + loc + blog.reference + '&text=' + blog.links.twitter_text + '&hashtags=' + blog.links.twitter_hashtags" target="_blank">
+            <img src="./assets/images/icons/twitter_ic_small.png" class="link_icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="full_blog" class="top_container" style="position: fixed; z-index: -1;">
+  <div class="banner_image">
+  </div>
+  <div class="black_overlay" id="overlay_top">
+  </div>
+</div>
+<div *ngIf="full_blog" class="banner_top_filler">
+</div>
+<div *ngIf="full_blog" class="wrapper_2">
+  <div class="title">{{blogs[blog_index].title}}</div>
+  <div class="content" [innerHtml]="blogs[blog_index].content"></div>
+  <div class="links_container_2">
+    <a href = "{{fb_links[blog_index]}}" target="_blank" style="margin-right: 2vw;">
+      <img src="./assets/images/icons/facebook_ic_big.png" class="link_big">
+    </a>
+    <a [href]="'https://twitter.com/intent/tweet?url=' + loc + blogs[blog_index].reference + '&text=' + blogs[blog_index].links.twitter_text + '&hashtags=' + blogs[blog_index].links.twitter_hashtags" target="_blank">
+      <img src="./assets/images/icons/twitter_ic_big.png" class="link_big">
+    </a>
+  </div>
+  <div *ngIf="related.length  != 0" class="title_related_post">View related posts</div>
+  <div *ngIf="related.length  != 0" class="rel_post_container">
+    <div *ngFor="let rel of related; let i = index" class="rel_wrapper">
+      <img src="{{blogs[rel].img_square}}" class="blog_img_2" routerLink="/blogs" fragment="{{blogs[rel].reference}}">
+      <div class="blog_prev_container_2" routerLink="/blogs" fragment="{{blogs[rel].reference}}">
+        <div class="prev_title_2" routerLink="/blogs" fragment="{{blogs[rel].reference}}">{{blogs[rel].title_shortened}}</div>
+        <div class="prev_content_2" [innerHtml]="blogs[rel].content_shortened"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="full_blog">
+  <app-footer>
+  </app-footer>
+</div>

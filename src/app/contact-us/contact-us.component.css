@@ -1,0 +1,289 @@
+.banner_image{
+  height: 40vw;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.black_overlay{
+  position: absolute;
+  height: 42vw;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,.35);
+}
+
+.top_container{
+  height: 42vw;
+  width: 100%;
+}
+
+.top_banner_image{
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_top_filler{
+  min-height: 42vw;
+  width: 100%;
+  z-index: 0;
+}
+.text_on_poster{
+  padding:5px;
+  border: 1px solid rgba(0,0,0,.5);
+  position: absolute;
+  bottom:100px;
+  width:35%;
+  margin-left: 30px;  
+}
+
+.text_on_poster_div{
+  color: rgba(255,255,255,.95);
+  text-align: left;
+  font-family: OpenSans-Regular;
+  background-color: rgba(0,0,0,.5);
+  padding: 30px 20px;
+}
+#poster_1{
+  background-image: url('/assets/images/contact_us_poster1.jpg');
+}
+
+agm-map {
+  height: 15rem;
+}
+
+#filler_1{
+  min-height: 22rem;
+  width: 100%;
+}
+
+.contact_info{
+  width: 60%;
+  margin: auto;
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  box-shadow: 0px 0px 3px 0.01px rgba(0,0,0,.5);
+  position: relative;
+  top: -3rem;
+  z-index: 1;
+}
+
+.message{
+  position: relative;
+  padding: 50px 5%;
+}
+.contact_btn{
+  position: absolute;
+  width: 90%;
+  margin-left: -45%;
+  height: 65px;
+  top: -32px;
+  left: 50%;
+  background-color: #72bf43;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 65px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.23);
+}
+.contact_container{
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#address_box{
+  border-right: .25px solid rgba(0,0,0,.2);
+  width: 40%;
+  padding: 0 7.5%;
+}
+
+#phone_box{
+  width: 40%;
+  padding: 0 7.5%;
+}
+
+.contact_title{
+  font-family: OpenSans-Light;
+font-size: 10px;
+color: #333C4E;
+letter-spacing: 0.73px;
+line-height: 18px;
+}
+.address{
+  margin-bottom: 20px;
+}
+.address_title{
+  color: #fff;
+  font-family: Lato-Light;
+  font-size: 1.3vw;
+  background-image: url('/assets/images/icons/inbox@2x.png');
+  padding: 2px 0px 2px 40px;
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  background-size: 7%;
+}
+
+.phone_title{
+  color: #fff;
+  font-family: Lato-Light;
+  font-size: 1.3vw;
+  background-image: url('/assets/images/icons/tablet@2x.png');
+  padding: 2px 0px 2px 30px;
+  background-repeat: no-repeat;
+  background-position: 0px 50%;
+  background-size: 5%;
+}
+.icon{
+  height: 1.5vw;
+  margin-right: .8vw;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.contact_text{
+  color: #fff;
+  font-family: Lato-Light;
+  font-size: 1.1vw;
+}
+
+.little_padding{
+  padding-left: .3vw;
+  padding-bottom: .6vw;
+}
+
+.contact_form{
+  position: absolute;
+  right: 30px;
+  background-color: #fff;
+  height: 30vw;
+  bottom: 50px;
+  width: 500px;
+}
+.message_info{
+  padding: .6rem 0;
+}
+
+.input_text{
+  width: 100%;
+  padding: .3rem 0;
+  font-family: Lato-Regular;
+  font-size: 1.1vw;
+  border: 1px solid rgba(0,0,0,.2);
+  color: #7E8890;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-left-width: 0;
+  margin-bottom: 15px;
+}
+
+.input_text:focus{
+  outline: none;
+}
+
+.input_text::placeholder {
+  color: #B5B8BA;
+}
+
+.message_content{
+  margin: .6rem 0;
+  padding: .8rem;
+  width: 100%;
+  resize: none;
+  height: 8rem;
+}
+
+.submit_btn{
+  margin-top: 0;
+  padding: 10px 50px;
+  float: right;
+  background: #72bf44;
+  color: #fff;
+  border: none;
+  letter-spacing: .6x;
+  font-size: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.23);
+}
+
+.submit_btn:focus{
+  outline: none;
+}
+
+@media all and (max-width: 992px) {
+  .banner_image{
+    top: 3.4rem;
+  }
+
+  .contact_info{
+    width: 90%;
+  }
+
+  .message{
+    width: 90%;
+  }
+
+  #filler_1{
+    min-height: 5rem;
+  }
+
+  #address_box{
+    width: 45%;
+    padding: 0 7.5%;
+  }
+
+  #phone_box{
+    width: 45%;
+    padding: 0 7.5%;
+  }
+
+  .contact_title{
+    font-size: 2.6vw;
+  }
+
+  .contact_text{
+    font-size: 2.4vw;
+  }
+
+  .input_text{
+    font-size: 2.4vw;
+  }
+
+  .submit_btn{
+    width: 20%;
+    font-size: 2.3vw;
+    padding: 1vw 0;
+  }
+
+  .icon{
+    height: 2.8vw;
+  }
+
+  .contact_container{
+    line-height: 3.5vw;
+  }
+
+  .message{
+    line-height: 3.5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 95%;
+  }
+
+  .input_text{
+    padding: .2rem 1vw;
+  }
+
+}

@@ -1,0 +1,168 @@
+#news_image_1{
+  height: 25vw;
+  float: left;
+  margin: 0 1.5rem 1rem 0;
+}
+
+#blogs_text{
+  display: none;
+}
+
+#wrapper_and_foot{
+  overflow: hidden;
+}
+
+#heading_image_div{
+  height: 10rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  transition: 500ms ease-in-out;
+}
+
+#heading_image{
+  width: 100%;
+}
+
+.wrapper{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7rem 0 0 0;
+}
+
+#news_text{
+  font-family: Lato-Light;
+  font-size: 1.2vw;
+  color: #7E8890;
+  margin-right: 10%;
+}
+
+.nav_pane_fixed{
+  width: auto;
+  font-family: Lato-Black;
+  font-size: 2.8vw;
+  color: #7E8890;
+  float: left;
+  margin-right: 5rem;
+  position: fixed;
+  margin-left: 5%;
+}
+
+.nav_pane{
+  width: auto;
+  font-family: Lato-Black;
+  font-size: 2.8vw;
+  color: #7E8890;
+  float: left;
+  margin-right: 5rem;
+  opacity: 0;
+  margin-left: 5%;
+}
+
+.content_pane{
+  width: auto;
+  font-family: Lato-Light;
+  font-size: 1.3vw;
+  color: #7E8890;
+  overflow-y:auto;
+  position:relative;
+  padding-bottom: 3rem;
+  transition: 500ms ease-in-out;
+  opacity: 1;
+}
+
+.content{
+  float: left;
+}
+
+#blogs_content{
+  font-family: Lato-Regular;
+  font-size: 1.8vw;
+  color: #7E8890;
+}
+
+#news_content{
+  margin-top: .1rem;
+}
+
+.btns{
+  transition: 250ms ease-in-out;
+  cursor: pointer;
+  outline: none;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.footer_wrapper{
+  float: right;
+  position: relative;
+  opacity: 0;
+  display: block;
+}
+
+@media all and (max-width: 992px) {
+
+  #news_text{
+    margin-left: 4%;
+    margin-right: 7%;
+    font-size: 3.4vw;
+  }
+
+  #heading_image_div{
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+
+  .footer{
+    position: relative;
+    float: right;
+  }
+
+  .footer_wrapper{
+    float: right;
+    position: relative;
+    opacity: 0;
+    display: none;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5rem 0 0 0;
+  }
+
+  #news_image_1{
+    height: 30vw;
+  }
+
+  .content_pane{
+    font-size: 2vw;
+  }
+
+  .nav_pane_fixed{
+    font-size: 3.8vw;
+    margin-right: 2rem;
+  }
+
+  .nav_pane{
+    font-size: 3.8vw;
+    margin-right: 2rem;
+  }
+
+  #blogs_content{
+    font-size: 2.4vw;
+  }
+}

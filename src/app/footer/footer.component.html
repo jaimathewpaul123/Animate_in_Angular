@@ -1,0 +1,17 @@
+<div class="footer">
+  <div class="item_copyright">
+    © 2017 farmkart.com
+  </div>
+  <div class="menu_row">
+  	<div class="menu" *ngFor="let menu of footer_menu">
+	    <a routerLink="{{menu.link}}" target="_new">{{menu.text}}</a>
+	</div>
+  </div>
+  <div class="item_row">
+  	<div class="item" *ngFor="let image of footer_icons">
+	    <a href="{{image.link}}" target="_new">
+	      <img src="{{image.icon}}" class="icon_image">
+	    </a>
+	</div>	
+   </div>    
+</div>

@@ -1,0 +1,36 @@
+<div class="poster_container">
+  <div id="poster_sticky">
+  </div>
+  <div id="poster_faded">
+  </div>
+  <div class="black_overlay">
+    <div id="always_centered">
+      <img src="assets/images/logo/Farmkart_Logo_White.png" id="farmkart_center_logo">
+      <div id="coming_soon">
+        <span class="shown_letter" [innerHTML]="coming_soon_shown"></span>
+        <span class="hidden_letter" [innerHTML]="coming_soon_hidden"></span>
+      </div>
+      <div class="content_padding">
+        <div class="one_liner">
+          {{one_line_text}}
+        </div>
+        <div class="content">
+          {{content_text}}
+        </div>
+        <div class="nav_btn_container">
+          <div *ngFor="let line of one_line; let i = index;" class="nav_btn" [style.width]="btn_width" (click)="change_text_on_show(i)">
+            <div [id]="'btn_content_' + i" class="btn_content">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_container">
+      <div class="item" *ngFor="let image of footer_icons">
+        <a href="{{image.link}}" target="_new">
+          <img src="{{image.icon}}" class="icon_image">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,420 @@
+p{
+  margin-top: .5rem;
+}
+
+.text_on_poster{
+  padding:5px;
+  border: 1px solid rgba(0,0,0,.5);
+  position: absolute;
+  bottom:100px;
+  width:35%;
+  margin-left: 30px;  
+}
+
+.text_on_poster_div{
+  color: rgba(255,255,255,.95);
+  text-align: left;
+  font-family: OpenSans-Regular;
+  background-color: rgba(0,0,0,.5);
+  padding: 30px 20px;
+}
+.text_on_poster h2{
+  font-size: 35px;
+}
+.text_on_poster p{
+  font-size: 22px;
+}
+
+
+
+.partner_us_message{
+  padding: 50px;
+  position: absolute;
+  left: 85%;
+  top: 50%;
+  height: 360px;
+  margin-top: -180px;
+  width:80%;
+  background-color: #fff;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.08);
+}
+
+.text_on_poster_content{
+  padding: 1rem 0;
+  color: #333C4E;
+  font-size: 12px;
+  font-family: OpenSans-Regular;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.banner_image{
+  height: 42vw;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0% 30%;
+  position: relative;
+}
+.partner_with_us_container{
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.partner_with_us_container .banner_image{
+  width: 50%;
+}
+
+.top_container{
+  height: 42vw;
+  width: 100%;
+}
+
+.top_banner_image{
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_top_filler{
+  min-height: 42vw;
+  width: 100%;
+}
+
+.black_overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 42vw;
+  background: rgba(0,0,0,.35);
+}
+
+#poster_1{
+  background-image: url('/assets/images/our_network_poster1.jpg');
+}
+
+#partner_with_us{
+  background-image: url('/assets/images/Group.png');
+  margin-bottom: 0;
+}
+
+.our_partner_container{
+  padding: 120px 12.5% 150px;
+  text-align: center;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+.about_us_container{
+  padding: 4rem 12.5%;
+  text-align: center;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.section{
+  display: inline-block;
+}
+
+.title{
+  color: #333C4E;
+  font-family: OpenSans-Regular;
+  font-size: 23px;
+  letter-spacing: 1.15px;
+  margin-bottom: 30px;
+}
+.partner_us_message .title{
+  margin-bottom: 15px;
+}
+.content{
+  color: #7E8890;
+  font-family: Lato-Light;
+  font-size: 1.1vw;
+}
+
+.our_partner_container .content{
+  width: 80%;
+  margin: 0 auto 50px;
+}
+
+.board_memebers_container{
+  padding: 18rem 12.5% 10rem;
+  text-align: center;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.investment_container{
+  padding: 10rem 12.5% 20rem;
+  text-align: center;
+  background: #f5f5f5 ;
+  overflow: hidden;
+}
+
+#partners, #board{
+  margin-top: 0;
+}
+
+#team{
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+#mission_content #vision_content{
+  margin-top: .5rem;
+}
+
+.circle_shadow{
+  width: 14%;
+}
+
+#CEO_image{
+  width: 100%;
+  object-fit: cover;
+}
+
+#message_content{
+  margin: auto;
+  margin-top: 2.6rem;
+  width: 80%;
+}
+
+#message_name{
+  font-size: 1vw;
+  margin-top: .9rem;
+}
+
+#message_position{
+  font-size: .95vw;
+  font-family: Lato-LightItalic;
+}
+
+.team_row{
+  margin: 4rem -2% 0 -2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team_row_2{
+  margin: 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image_container{
+  width: 17%;
+  margin-bottom: 1rem;
+}
+
+.team_image{
+  width: 100%;
+}
+
+.image_container:hover img.team_image{
+  m-s-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: opacity 300ms cubic-bezier(0.694, 0, 0.335, 1), transform 700ms cubic-bezier(0.694, 0, 0.335, 1);
+}
+
+.team_name{
+  font-size: .95vw;
+  font-family: Lato-Regular;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+#bio_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  transition: 500ms;
+  height: 0;
+  overflow: hidden;
+}
+
+.image_bio_container{
+  width: 30%;
+}
+
+.text_bio_container{
+  width: 60%;
+}
+
+#image_bio{
+  width: 100%;
+}
+
+#name_bio{
+  margin-top: 2.5%;
+  color: #7E8890;
+  font-family: Lato-Regular;
+  font-size: 1.5vw;
+}
+
+#position_bio{
+  margin-bottom: 4%;
+  color: #7E8890;
+  font-family: Lato-LightItalic;
+  font-size: 1.1vw;
+}
+
+#biography_bio{
+  color: #7E8890;
+  font-family: Lato-Regular;
+  font-size: 1.1vw;
+  text-align: justify;
+}
+
+.investment_wrapper{
+  margin: 6rem -2.5% 0 -2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.investment_content{
+  width: 47%;
+}
+
+.investment_text{
+  text-align: left;
+}
+
+#our_story_image{
+  width: 47%;
+}
+
+@media all and (max-width: 992px) {
+
+  .text_on_poster{
+    font-size: 2.9vw;
+    line-height: 5.25vw;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  #partner_with_us{
+    height: 60vw;
+  }
+
+  .banner_image{
+    height: 40vw;
+  }
+
+  .about_us_container{
+    padding: 4rem 3%;
+  }
+
+  .title{
+    font-size: 5vw;
+  }
+
+  .content{
+    font-size: 2.9vw;
+  }
+
+  .team_row{
+    margin: 1rem 1%;
+  }
+
+  .circle_shadow{
+    width: 40%;
+    margin: 1.5rem auto;
+  }
+
+  #CEO_image{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  #message_name{
+    font-size: 2.5vw;
+    margin-top: .9rem;
+  }
+
+  #message_position{
+    font-size: 2.45vw;
+    font-family: Lato-LightItalic;
+  }
+
+  .team_name{
+    font-size: 2vw;
+  }
+
+  #name_bio{
+    font-size: 2.95vw;
+  }
+
+  #position_bio{
+    font-size: 1.85vw;
+  }
+
+  #biography_bio{
+    font-size: 2.2vw;
+  }
+
+  .text_on_poster_content{
+    padding: 1rem 0;
+    font-size: 2.8vw;
+    line-height: 5vw;
+  }
+
+  .team_row_2{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3.5rem 1%;
+  }
+
+  .image_container{
+    width: 40%;
+    margin-bottom: 1rem;
+  }
+
+  .team_name{
+    font-size: 3vw;
+  }
+
+  .investment_wrapper{
+    flex-wrap: wrap;
+  }
+
+  #our_story_image{
+    width: 100%;
+  }
+
+  .investment_content{
+    width: 100%;
+    padding-top: 6rem;
+  }
+
+  .investment_text{
+    text-align: center;
+  }
+
+  .investment_wrapper{
+    margin: 5.5rem 0;
+  }
+
+  #partner_title{
+    font-size: 5vw;
+    margin-bottom: .5rem;
+  }
+
+  #cont_2{
+    margin-bottom: 0;
+  }
+}

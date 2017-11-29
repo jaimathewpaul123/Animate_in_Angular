@@ -1,0 +1,349 @@
+p{
+  margin-top: .5rem;
+}
+
+.text_on_poster{
+  color: rgba(255,255,255,.95);
+  font-size: 1.8vw;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 80%;
+  margin: 0% 10%;
+  font-family: Benton-Book;
+  transform: translateY(-50%);
+  line-height: 4.25vw;
+}
+
+.banner_image{
+  height: 42vw;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0% 30%;
+  position: relative;
+}
+
+.top_container{
+  height: 42vw;
+  width: 100%;
+}
+
+.top_banner_image{
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_top_filler{
+  min-height: 42vw;
+  width: 100%;
+}
+
+.black_overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,.45);
+}
+
+#poster_1{
+  background-image: url('/assets/images/about_us_poster1.jpg');
+}
+
+#poster_2{
+  margin-bottom: 0;
+}
+
+.grid_img{
+  width: 25%;
+  height: 21vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.grid_img:hover > .grid_val{
+  -moz-transform: scale(1.2,1.2);
+  -webkit-transform: scale(1.2,1.2);
+  transform: scale(1.2,1.2);
+}
+
+.grid_val{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.about_us_container{
+  padding: 4rem 10% 9rem 10%;
+  text-align: center;
+  padding-bottom: 6rem;
+  background-color: #fff;
+}
+
+.section{
+  margin: 4rem 0;
+  display: inline-block;
+}
+
+.title{
+  color: #333C4E;
+  font-family: Lato-Light;
+  font-size: 2vw;
+}
+
+.content{
+  color: #7E8890;
+  font-family: Lato-Light;
+  font-size: 1.1vw;
+}
+
+#mission, #vision{
+  margin-top: 0;
+}
+
+#team{
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+#mission_content{
+  margin-top: .5rem;
+  width: 67.5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.circle_shadow{
+  height: 10.2vw;
+  width: 10.2vw;
+  padding: .1vw;
+  border-radius: 10000px;
+  box-shadow: 0px 0px 3px 0.01px rgba(0,0,0,.5);
+  margin: auto;
+}
+
+#CEO_image{
+  height: 10vw;
+  width: 10vw;
+  border-radius: 1000px;
+}
+
+#message_content{
+  font-family: Benton-Book;
+  color: #7E8890;
+  margin: auto;
+  margin-top: 2.6rem;
+  width: 87%;
+}
+
+#message_name{
+  font-size: 1.1vw;
+  margin-top: .9rem;
+}
+
+#message_position{
+  font-size: .95vw;
+  font-family: Lato-Light;
+}
+
+.team_row{
+  margin: .75rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.collage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.image_container{
+  width: 18%;
+}
+
+.team_image{
+  width: 100%;
+  cursor: pointer;
+}
+
+.team_name{
+  font-size: 1.1vw;
+  font-family: Benton-Book;
+  text-align: center;
+  margin-top: .5rem;
+  cursor: pointer;
+}
+
+#bio_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  transition: 1000ms ease-in-out;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+  max-height: 0px;
+}
+
+.image_bio_container{
+  width: 30%;
+}
+
+.text_bio_container{
+  width: 60%;
+}
+
+#image_bio{
+  width: 100%;
+}
+
+#name_bio{
+  margin-top: 2.5%;
+  color: #333C4E;
+  font-family: Lato-Light;
+  font-size: 1.5vw;
+}
+
+#position_bio{
+  margin-bottom: 4%;
+  color: #7E8890;
+  font-family: Lato-Light;
+  font-size: 1.1vw;
+
+}
+
+#biography_bio{
+  color: #7E8890;
+  font-family: Lato-Light;
+  font-size: 1.1vw;
+  text-align: left;
+}
+
+#our_story_image{
+  width: 65%;
+  margin: 4rem auto 0 auto;
+}
+
+#story{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media all and (max-width: 992px) {
+  .text_on_poster{
+    font-size: 2.9vw;
+  }
+
+  .banner_image{
+    height: 35vw;
+    width: 100%;
+  }
+
+  .about_us_container{
+    padding: 4rem 3%;
+  }
+
+  .title{
+    font-size: 5vw;
+  }
+
+  .content{
+    font-size: 2.9vw;
+  }
+
+  .circle_shadow{
+    height: 30.2vw;
+    width: 30.2vw;
+    padding: .1vw;
+    border-radius: 10000px;
+    box-shadow: 0px 0px 3px 0.01px rgba(0,0,0,.5);
+    margin: auto;
+  }
+
+  #CEO_image{
+    height: 30vw;
+    width: 30vw;
+  }
+
+  #message_name{
+    font-size: 2.5vw;
+    margin-top: .9rem;
+  }
+
+  #message_position{
+    font-size: 2.45vw;
+    font-family: Lato-Light;
+  }
+
+  .team_name{
+    font-size: 2vw;
+  }
+
+  #name_bio{
+    font-size: 2.95vw;
+    line-height: 4vw;
+  }
+
+  #position_bio{
+    font-size: 1.85vw;
+    line-height: 4vw;
+  }
+
+  #biography_bio{
+    font-size: 2.2vw;
+    line-height: 4vw;
+  }
+
+  .text_on_poster{
+    line-height: 5.25vw;
+  }
+
+  .team_name{
+    line-height: 3vw;
+  }
+
+  .grid_img{
+    height: 17.5vw;
+  }
+
+
+  #mission_content{
+    width: 85%;
+  }
+
+  #story{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  #our_story_image{
+    width: 80%;
+  }
+
+}

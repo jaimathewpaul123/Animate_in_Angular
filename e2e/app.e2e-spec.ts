@@ -1,10 +1,10 @@
-import { AppPage } from './app.po';
+import { FarmkartComingSoonPage } from './app.po';
 
-describe('my-app App', () => {
-  let page: AppPage;
+describe('farmkart-coming-soon App', () => {
+  let page: FarmkartComingSoonPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new FarmkartComingSoonPage();
   });
 
   it('should display welcome message', () => {

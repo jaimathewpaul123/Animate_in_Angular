@@ -1,0 +1,30 @@
+<div class="full_job_wrapper">
+  <div *ngIf="!no_job_bool">
+    <div class="job_title" style="margin-bottom: .5rem;">{{careers[careers_index].Title}}</div>
+    <div class="job_content" [innerHtml]="careers[careers_index].Description"></div>
+    <div class="job_content" style="margin-top: 1.5rem;"><span class="job_req">Number of positions available: </span><span [innerHtml]="careers[careers_index].Open_pos"></span></div>
+    <div class="job_content"><span class="job_req">Job Type: </span><span [innerHtml]="careers[careers_index].Job_Type"></span></div>
+    <div class="job_content" *ngFor="let req of careers[careers_index].Reqs" style="margin-top: 1.5rem;"><span class="job_req">
+      {{req.List_name}}:</span>
+      <ul>
+        <li *ngFor="let task of req.List"><span [innerHtml]="task"></span></li>
+      </ul>
+    </div>
+    <div class="job_content" style="margin-top: 1.5rem;"><span class="job_req">How to apply: </span><span [innerHtml]="careers[careers_index].HTA"></span></div>
+  </div>
+  <div *ngIf="no_job_bool">
+    <div class="job_content" style="font-size: 2vw; margin-top: 4rem; margin-bottom: 8rem;">We're sorry, It seems that job posting is not available anymore.</div>
+  </div>
+  <div *ngIf="related.length  != 0" class="positions_title">Other Positions</div>
+  <div *ngIf="related.length  != 0" class="positions_wrapper">
+    <div *ngFor="let rel of related" class="position_container">
+      <div class="job_title_prev">{{careers[rel].Title_prev}}</div>
+      <div class="job_desc_prev">{{careers[rel].Description_prev}}</div>
+      <div class="btn" routerLink="/jobs" fragment="{{careers[rel].Reference}}" >
+        View Details
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer>
+</app-footer>

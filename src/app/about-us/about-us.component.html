@@ -1,0 +1,99 @@
+<div class="top_container" name="mission" style="position: fixed; z-index: -1;">
+  <div class="top_banner_image" id="poster_1">
+  </div>
+  <div class="black_overlay" id="overlay_top">
+    <div class="text_on_poster" id="text_top">
+      {{top_text}}
+    </div>
+  </div>
+</div>
+<div class="banner_top_filler">
+</div>
+<div (click)="close_bio()" class="about_us_container">
+  <div class="section" id="mission" name="story">
+    <div class="title">
+      OUR MISSION
+    </div>
+    <div class="content" id="mission_content" [innerHtml]="mission1">
+    </div>
+    <div class="title" style="margin-top: 4rem;">
+      OUR VISION
+    </div>
+    <div class="content" id="mission_content" [innerHtml]="vision1">
+    </div>
+    <img src="/assets/images/about_us_image1.jpg" id="our_story_image">
+  </div>
+  <div class="section" id="story" name="message">
+    <div class="title">
+      OUR STORY
+    </div>
+    <div class="content" id="mission_content" [innerHtml]="story">
+    </div>
+  </div>
+  <div class="section" id="message" name="team">
+    <div class="circle_shadow">
+      <img src="assets/images/about_us_CEO.jpg" id="CEO_image">
+    </div>
+    <div class="content" id="message_content" [innerHtml]="message">
+    </div>
+    <div class="title" id="message_name">
+      Atul Patidar
+    </div>
+    <div class="content" id="message_position">
+      CEO
+    </div>
+  </div>
+  <div class="section" id="team">
+    <div class="title" style="margin-bottom: 2.5rem;">
+      OUR TEAM
+    </div>
+    <div class="team_row">
+      <div *ngFor="let member of team_members_r1; let i = index;" class="image_container">
+        <img (click)="active_bio_change($event, i)" src="{{member.image}}" class="team_image" (mouseenter) ="change_image_in(i)" (mouseleave) ="change_image_out(i)">
+        <!--<img (click)="active_bio_change($event, i)" src="{{member.image}}" class="team_image">-->
+        <div (click)="active_bio_change($event, i)" class="content team_name">
+          {{member.name}}
+        </div>
+      </div>
+    </div>
+    <div id="bio_container" (click)="stop_propagation($event)">
+      <div class="image_bio_container">
+        <img [src]="active_image_bio" id="image_bio">
+      </div>
+      <div class="text_bio_container">
+        <div id="name_bio">
+          {{active_name_bio}}
+        </div>
+        <div id="position_bio">
+          {{active_position_bio}}
+        </div>
+        <div id="biography_bio" [innerHtml] = "active_biography_bio">
+        </div>
+      </div>
+    </div>
+    <div class="team_row">
+      <div *ngFor="let member of team_members_r2; let i = index;" class="image_container">
+        <img (click)="active_bio_change($event, i + 5)" src="{{member.image}}" class="team_image" (mouseenter) ="change_image_in(i + 5)" (mouseleave) ="change_image_out(i + 5)">
+        <!--<img (click)="active_bio_change($event, i + 5)" src="{{member.image}}" class="team_image">-->
+        <div (click)="active_bio_change($event, i+ 5)" class="content team_name">
+          {{member.name}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner_image" id="poster_2">
+  <div class="collage">
+    <div *ngFor="let img of grid" class="grid_img">
+      <div class="grid_val" [ngStyle]="{ 'background-image': 'url(' + img + ')'}">
+      </div>
+    </div>
+  </div>
+  <div class="black_overlay" style="pointer-events: none;">
+    <div class="text_on_poster">
+      {{bottom_text}}
+    </div>
+  </div>
+</div>
+<app-footer>
+</app-footer>
