@@ -12,14 +12,14 @@
 
 .black_overlay{
   position: absolute;
-  height: 42vw;
+  height: 60vw;
   width: 100%;
   top: 0;
   background: rgba(0,0,0,.35);
 }
 
 .top_container{
-  height: 42vw;
+  height: 60vw;
   width: 100%;
 }
 
@@ -33,17 +33,12 @@
   position: relative;
 }
 
-.banner_top_filler{
-  min-height: 42vw;
-  width: 100%;
-  z-index: 0;
-}
 .text_on_poster{
   padding:5px;
   border: 1px solid rgba(0,0,0,.5);
   position: absolute;
-  bottom:100px;
-  width:35%;
+  bottom:12vw;
+  width:40%;
   margin-left: 30px;  
 }
 
@@ -81,7 +76,7 @@ agm-map {
 
 .message{
   position: relative;
-  padding: 50px 5%;
+  padding: 50px 5% 3.5vw;
 }
 .contact_btn{
   position: absolute;
@@ -120,7 +115,6 @@ agm-map {
   font-family: OpenSans-Light;
 font-size: 10px;
 color: #333C4E;
-letter-spacing: 0.73px;
 line-height: 18px;
 }
 .address{
@@ -169,9 +163,8 @@ line-height: 18px;
   position: absolute;
   right: 30px;
   background-color: #fff;
-  height: 30vw;
-  bottom: 50px;
-  width: 500px;
+  bottom: 4.8vw;
+  width: 31vw;
 }
 .message_info{
   padding: .6rem 0;
@@ -199,11 +192,11 @@ line-height: 18px;
 }
 
 .message_content{
-  margin: .6rem 0;
-  padding: .8rem;
+  margin: 0 0 .6rem;
+  padding: .6rem;
   width: 100%;
   resize: none;
-  height: 8rem;
+  height: 6rem;
 }
 
 .submit_btn{

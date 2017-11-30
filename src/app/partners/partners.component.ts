@@ -11,7 +11,7 @@ export class PartnersComponent implements OnInit {
   partners_content = "Farmkart believes in fruitful alliances that yield better results and enhanced productivity. We have partnered with leading players in technology, innovation, and farming. We are building a strongly associated group that is passionate to achieve a common goal.We have teamed up with biggest groups and associations that assure growth and innovation further."
   partners_content2 = "Farmkart thrives on its team and associates. We brought the best of the industry together to provide you the most advanced solutions and services."
 
-  investment_content = "Farmkart is innovating, developing, and delivering the next<br>generation of agri-tech, and we are committed to generating<br>sustainable profit and value for our stakeholders. We invite<br>you to join us in designing the farm of tomorrow.";
+  investment_content = "Farmkart is innovating, developing, and delivering the nextgeneration of agri-tech, and we are committed to generating sustainable profit and value for our stakeholders. We invite you to join us in designing the farm of tomorrow.";
 
   bottom_text = "Partner With Us";
 
@@ -19,10 +19,10 @@ export class PartnersComponent implements OnInit {
 
   partners_img = [
     "assets/images/our_network/Partner-1.png",
-    "assets/images/our_network/Partner-2.png",
-    "assets/images/our_network/Partner-3.png",
-    "assets/images/our_network/Partner-4.png",
-    "assets/images/our_network/Partner-5.png"
+    "assets/images/our_network/Partner-6.png",
+    "assets/images/our_network/Partner-8.png",
+    "assets/images/our_network/Partner-7.png",
+    "assets/images/our_network/Partner-9.png"
   ];
 
   board_members = [
@@ -73,48 +73,6 @@ export class PartnersComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0,0);
+    window.scrollTo(0,5);
   }
-
-  // change_poster_appearance(event){
-  //   var container = this.element.nativeElement.querySelector('#overlay_top');
-  //   var img = this.element.nativeElement.querySelector('#poster_1');
-  //   var text = this.element.nativeElement.querySelector('#text_top');
-
-  //   var min = .45;
-  //   var max = .75;
-
-  //   var min_scale = 1;
-  //   var max_scale = 1.25;
-
-  //   var mult = currentYPosition()/460;
-
-  //   if (currentYPosition() <= 460){
-  //     img.style.display = "block";
-  //     container.style.display = "block";
-  //     text.style.display = "block";
-  //     var val = ((max - min)*mult) + min;
-  //     container.style.background = "rgba(0,0,0," + val + ")";
-  //     var val = 1 - mult;
-  //     text.style.opacity = val;
-  //     var val = ((max_scale - min_scale)*mult) + min_scale;
-  //     img.style.transform = "scale(" + val + "," + val + ")";
-  //   }else{
-  //     img.style.display = "none";
-  //     text.style.display = "none";
-  //     container.style.display = "none";
-  //   }
-  // }
-
 }
-
-// function currentYPosition() {
-//     // Firefox, Chrome, Opera, Safari
-//     if (self.pageYOffset) return self.pageYOffset;
-//     // Internet Explorer 6 - standards mode
-//     if (document.documentElement && document.documentElement.scrollTop)
-//         return document.documentElement.scrollTop;
-//     // Internet Explorer 6, 7 and 8
-//     if (document.body.scrollTop) return document.body.scrollTop;
-//     return 0;
-// }

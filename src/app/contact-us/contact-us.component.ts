@@ -17,7 +17,7 @@ export class ContactUsComponent implements OnInit {
   lat3: number = (this.lat1 + this.lat2)/2;
   lng3: number = (this.lng1 + this.lng2)/2;
 
-  address = "1, Saket Residency Barwani,"+ "<br/>"+" Madhya Pradesh 451551, India";
+  address = "1, Saket Residency Barwani,"+ "<br/> Madhya Pradesh 451551, India";
   phone = "+91 94250-87517<br>+91 90099-87517";
 
   constructor(private element: ElementRef, private http:Http) {
@@ -25,6 +25,6 @@ export class ContactUsComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0,0);
+    window.scrollTo(0,5);
   }
   }

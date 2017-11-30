@@ -6,8 +6,8 @@ p{
   padding:5px;
   border: 1px solid rgba(0,0,0,.5);
   position: absolute;
-  bottom:100px;
-  width:35%;
+  bottom:9.7vw;
+  width:50%;
   margin-left: 30px;  
 }
 
@@ -16,39 +16,39 @@ p{
   text-align: left;
   font-family: OpenSans-Regular;
   background-color: rgba(0,0,0,.5);
-  padding: 30px 20px;
+  padding: 2.9vw;
+  letter-spacing: 1.92px;
 }
 .text_on_poster h2{
-  font-size: 35px;
+  font-size: 2.5vw;
 }
 .text_on_poster p{
-  font-size: 22px;
+  font-size: 1.95vw;
 }
 
 
 
 .partner_us_message{
-  padding: 50px;
+  padding: 4.8vw;
   position: absolute;
   left: 85%;
   top: 50%;
-  height: 360px;
-  margin-top: -180px;
+  height: 35vw;
+  margin-top: -17.5vw;
   width:80%;
   background-color: #fff;
   box-shadow: 0 6px 12px 0 rgba(0,0,0,0.08);
 }
 
 .text_on_poster_content{
-  padding: 1rem 0;
   color: #333C4E;
   font-size: 12px;
   font-family: OpenSans-Regular;
-  line-height: 25px;
+  line-height: 2.4vw;
   letter-spacing: 1px;
 }
 .banner_image{
-  height: 42vw;
+  height: 60vw;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -63,10 +63,15 @@ p{
 }
 .partner_with_us_container .banner_image{
   width: 50%;
+  height: 45vw
+}
+
+.partner_with_us_container .black_overlay{
+  height: 45vw
 }
 
 .top_container{
-  height: 42vw;
+  height: 60vw;
   width: 100%;
 }
 
@@ -80,18 +85,13 @@ p{
   position: relative;
 }
 
-.banner_top_filler{
-  min-height: 42vw;
-  width: 100%;
-}
-
 .black_overlay{
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 42vw;
+  height: 60vw;
   background: rgba(0,0,0,.35);
 }
 
@@ -105,7 +105,7 @@ p{
 }
 
 .our_partner_container{
-  padding: 120px 12.5% 150px;
+  padding: 11vw 12.5% 14vw;
   text-align: center;
   background: #f5f5f5;
   overflow: hidden;
@@ -143,14 +143,14 @@ p{
 }
 
 .board_memebers_container{
-  padding: 18rem 12.5% 10rem;
+  padding: 17vw 12.5% 8vw;
   text-align: center;
   background: #f5f5f5;
   overflow: hidden;
 }
 
 .investment_container{
-  padding: 10rem 12.5% 20rem;
+  padding: 8vw 12.5% 17vw;
   text-align: center;
   background: #f5f5f5 ;
   overflow: hidden;
@@ -214,7 +214,6 @@ p{
 
 .image_container{
   width: 17%;
-  margin-bottom: 1rem;
 }
 
 .team_image{
@@ -277,14 +276,6 @@ p{
   text-align: justify;
 }
 
-.investment_wrapper{
-  margin: 6rem -2.5% 0 -2.5%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .investment_content{
   width: 47%;
 }
@@ -296,7 +287,13 @@ p{
 #our_story_image{
   width: 47%;
 }
-
+.investment_wrapper{
+  margin: 6rem -5% 0 -5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 @media all and (max-width: 992px) {
 
   .text_on_poster{
@@ -403,10 +400,6 @@ p{
 
   .investment_text{
     text-align: center;
-  }
-
-  .investment_wrapper{
-    margin: 5.5rem 0;
   }
 
   #partner_title{

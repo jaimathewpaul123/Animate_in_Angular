@@ -20,8 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
-        "../lib/css/animations.css",
-         "../lib/css/animations-ie-fix.css"
+        "../lib/css/animations.css"
       ],
       "scripts": [
         "../lib/js/css3-animate-it.js"

@@ -3,8 +3,8 @@
   padding:5px;
   border: 1px solid rgba(0,0,0,.5);
   position: absolute;
-  bottom:100px;
-  width:35%;
+  bottom:15vw;
+  width:40%;
   margin-left: 30px;  
 }
 
@@ -13,13 +13,15 @@
   text-align: left;
   font-family: OpenSans-Regular;
   background-color: rgba(0,0,0,.5);
-  padding: 30px 20px;
+  padding: 2.9vw;
 }
 .text_on_poster h2{
-  font-size: 35px;
+  font-size: 26px;
+  letter-spacing: 1.92px;
 }
 .text_on_poster p{
-  font-size: 22px;
+  font-size: 20px;
+  letter-spacing: 1.92px;
 }
 
 
@@ -32,6 +34,8 @@
   font-family: Lato-Light;
   font-size: 1.1vw;
   text-align: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .job_req{
@@ -41,7 +45,7 @@
 }
 
 .banner_image{
-  height: 42vw;
+  height: 60vw;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -57,12 +61,12 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 42vw;
+  height: 60vw;
   background: rgba(0,0,0,.5);
 }
 
 .top_container{
-  height: 42vw;
+  height: 60vw;
   width: 100%;
 }
 
@@ -99,19 +103,19 @@
   margin-bottom: 30px;
 }
 .positions_container{
-  padding: 60px 12.5% 120px;
+  padding: 5.8vw 12.5% 11vw;
   text-align: center;
   background: #f5f5f5;
   overflow: hidden;
 }
 .join_us_container{
-  padding: 120px 12.5% 0;
+  padding: 11vw 12.5% 0;
   text-align: center;
   background: #f5f5f5;
   overflow: hidden;
 }
 .carrer_container{
-  padding: 60px 12.5%;
+  padding: 5.8vw 12.5%;
   text-align: center;
   background: #f5f5f5;
   overflow: hidden;
@@ -122,28 +126,28 @@
 
 .job_title{
   color: #333C4E;
-  font-family: Lato-Regular;
+  font-family: OpenSans-Regular;
   font-size: 1.7vw;
 }
 
 .job_title_prev{
   color: #333C4E;
-  font-family: Lato-Regular;
-  font-size: 1.4vw;
+  font-family: OpenSans-Regular;
+  font-size: 1.2vw;
 }
 
 .job_desc_prev{
-  color: #7E8890;
-  font-family: Lato-Light;
-  font-size: 1.1vw;
-  color: #7E8890;
+  color: #333C4E;
+  font-family: OpenSans-Light;
+  font-size: .9vw;
+  line-height: 20px;
   margin-top: .75rem;
 }
 
 .job_content{
   color: #7E8890;
-  font-family: Lato-Light;
-  font-size: 1.1vw;
+  font-family: OpenSans-Light;
+  font-size: .9vw;
 }
 
 .careers_wrapper{
@@ -180,22 +184,24 @@
 }
 
 .position_container{
-  box-shadow: 0px 0px 3px 0.01px rgba(0,0,0,.3);
-  width: 27%;
+  background: #FFFFFF;
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.08);
+  width: 30%;
   text-align: center;
   padding: 1.5rem 2%;
   margin: 1rem 0;
 }
-
+.position_container .btn{
+  border-radius: 0 !important;
+}
 .btn{
-  border-radius: 3px;
-  margin-left: auto;
+  
   color: #fff;
-  background-color: #7E8890;
-  padding: .35rem 13% .35rem 13%;
+  background-color: #342e45;
+  padding: 10px 42px;
   font-family: Lato-Light;
   font-size: 1vw;
-  margin-top: .75rem;
+  margin-top: 20px;
   cursor: pointer;
 }
 

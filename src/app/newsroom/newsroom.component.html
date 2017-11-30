@@ -1,27 +1,6 @@
 <div class="wrapper">
-  <div class="nav_pane_fixed">
-    <div id="blogs_content" class="btns" routerLink="/newsroom" fragment="blogs" [ngStyle]="blogs_btn_style">
-      BLOGS
-    </div>
-    <div id="news_content" class="btns" routerLink="/newsroom" fragment="news" [ngStyle]="news_btn_style">
-      NEWS
-    </div>
-  </div>
-  <div class="nav_pane">
-    <div id="blogs_content" class="btns" routerLink="/newsroom" fragment="blogs">
-      BLOGS
-    </div>
-    <div id="news_content" class="btns"  routerLink="/newsroom" fragment="news">
-      NEWS
-    </div>
-  </div>
   <div id="wrapper_and_foot">
     <div class="content_pane" [style.opacity] = "content" [style.minHeight]="c_height">
-      <div id="news_text" [style.display]="news_text_style">
-      <!--  <img src="assets/images/news_image_1.jpg" id="news_image_1">-->
-        <div [innerHtml]="news">
-        </div>
-      </div>
       <div id="blogs_text" [style.display]="blogs_text_style">
         <app-blogs>
         </app-blogs>

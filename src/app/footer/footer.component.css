@@ -1,5 +1,5 @@
 .footer{
-  padding: 80px 0px;
+  padding: 7.8vw 0px;
   text-align: center;
   background-color: #4E4E4E;
   align-items: center;
@@ -22,11 +22,11 @@
   align-items: center;
   justify-content: center;
   list-style: none;  
-  padding: 15px 0px;
+  padding: 1.4vw 0px;
 }
 
 .menu{
-  padding: 0 15px;
+  padding: 0 1.4vw;
 }
 
 .menu a{

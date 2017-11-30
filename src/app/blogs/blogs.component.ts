@@ -6,8 +6,7 @@ import { WindowRef } from '../window.service';
 @Component({
   selector: 'app-blogs',
   templateUrl: './blogs.component.html',
-  styleUrls: ['./blogs.component.css'],
-  host: {'(window:scroll)': 'change_poster_appearance($event)'}
+  styleUrls: ['./blogs.component.css']
 })
 export class BlogsComponent implements OnInit {
 
@@ -25,27 +24,6 @@ export class BlogsComponent implements OnInit {
 
   fb_links = [];
 
-  change_poster_appearance(event){
-    if(this.full_blog){
-      var container = this.element.nativeElement.querySelector('#overlay_top');
-      var img = this.element.nativeElement.querySelector('.banner_image');
-
-      var min = .45;
-      var max = .75;
-
-      var min_scale = 1;
-      var max_scale = 1.25;
-
-      var mult = currentYPosition()/460;
-
-      if (currentYPosition() <= 460){
-        var val = ((max - min)*mult) + min;
-        container.style.background = "rgba(0,0,0," + val + ")";
-        var val = ((max_scale - min_scale)*mult) + min_scale;
-        img.style.transform = "scale(" + val + "," + val + ")";
-      }
-    }
-  }
 
   constructor(private element: ElementRef, private router: Router, private win: WindowRef, private blog: BlogsContentService) {
     this.window = win.nativeWindow;
@@ -141,15 +119,4 @@ export class BlogsComponent implements OnInit {
     });
   }
 
-}
-
-function currentYPosition() {
-    // Firefox, Chrome, Opera, Safari
-    if (self.pageYOffset) return self.pageYOffset;
-    // Internet Explorer 6 - standards mode
-    if (document.documentElement && document.documentElement.scrollTop)
-        return document.documentElement.scrollTop;
-    // Internet Explorer 6, 7 and 8
-    if (document.body.scrollTop) return document.body.scrollTop;
-    return 0;
 }

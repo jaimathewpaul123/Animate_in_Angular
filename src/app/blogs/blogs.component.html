@@ -1,5 +1,6 @@
 <div *ngIf="!full_blog" class="wrapper">
-  <div *ngFor="let blog of blogs; let i = index;" class="blog_container">
+  <div class="animatedParent">
+  <div *ngFor="let blog of blogs; let i = index;" class="blog_container animated justIn">
     <img src="{{blog.img_square}}" class="blog_img" routerLink="/blogs" fragment="{{blog.reference}}">
     <div class="blog_prev_container">
       <div class="prev_title" routerLink="/blogs" fragment="{{blog.reference}}">{{blog.title_shortened}}</div>
@@ -20,13 +21,12 @@
     </div>
   </div>
 </div>
-<div *ngIf="full_blog" class="top_container" style="position: fixed; z-index: -1;">
+</div>
+<div *ngIf="full_blog" class="top_container">
   <div class="banner_image">
   </div>
   <div class="black_overlay" id="overlay_top">
   </div>
-</div>
-<div *ngIf="full_blog" class="banner_top_filler">
 </div>
 <div *ngIf="full_blog" class="wrapper_2">
   <div class="title">{{blogs[blog_index].title}}</div>

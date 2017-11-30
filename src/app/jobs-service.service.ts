@@ -253,8 +253,8 @@ export class JobsServiceService {
     for(var i = 0; i < this.careers.length; i++){
       this.careers[i].Title_prev = this.careers[i].Title;
 
-      if (this.careers[i].Description.length > 96){
-        this.careers[i].Description_prev = this.careers[i].Description.substring(0,92) + "...";
+      if (this.careers[i].Description.length > 140){
+        this.careers[i].Description_prev = this.careers[i].Description.substring(0,142) + "...";
       }else{
         this.careers[i].Description_prev = this.careers[i].Description;
       }

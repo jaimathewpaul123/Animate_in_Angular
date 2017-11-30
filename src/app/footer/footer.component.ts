@@ -10,19 +10,19 @@ export class FooterComponent implements OnInit {
 
   footer_icons = [
     {
-      "icon": "assets/images/icons/twitter.png",
+      "icon": "assets/images/icons/twitter_white.png",
       "link": "https://twitter.com/farmkart"
     },
     {
-      "icon": "assets/images/icons/linked.png",
+      "icon": "assets/images/icons/linkedin_white.png",
       "link": "https://www.linkedin.com/company/farmkart"
     },
     {
-      "icon": "assets/images/icons/insta.png",
+      "icon": "assets/images/icons/insta_white.png",
       "link": "https://www.instagram.com/farmkart/"
     },
     {
-      "icon": "assets/images/icons/facebook.png",
+      "icon": "assets/images/icons/facebook_white.png",
       "link": "https://www.facebook.com/farmkartofficial/"
     }
   ];

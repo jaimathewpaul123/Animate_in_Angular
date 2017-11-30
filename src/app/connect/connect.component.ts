@@ -19,7 +19,7 @@ export class ConnectComponent implements OnInit {
   }
 
   ngOnInit() {
-    window.scrollTo(0,0);
+    window.scrollTo(0,5);
   }
 }
   

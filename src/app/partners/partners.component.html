@@ -3,7 +3,7 @@
   </div>
   <div class="black_overlay" id="overlay_top">
     <div class="text_on_poster animatedParent"  id="text_top" > 
-      <div class="text_on_poster_div repeat animated justIn">
+      <div class="text_on_poster_div animated justIn">
           <h2 >Collaborate with us</h2>
           <p >We are reinventing the future of smart farming.</p>
       </div>      
@@ -39,12 +39,12 @@
   </div>
 </div>
 <div class="board_memebers_container" id="cont_2">
-    <div class="section animatedParent" id="board" name="story">
-        <div class="title animated justIn" >
+    <div class="section " id="board" name="story">
+        <div class="title " >
           Board Of Directors
         </div>
-        <div class="team_row_2">
-          <div *ngFor="let member of board_members; let i = index;" class="image_container">
+        <div class="team_row_2 animatedParent">
+          <div *ngFor="let member of board_members; let i = index;" class="image_container animated justIn">
             <img src="{{member.image}}" class="team_image">
             <div class="content team_name">
               {{member.name}}
@@ -54,13 +54,13 @@
       </div>
 </div>
 <div class="investment_container" id="cont_2">  
-  <div id="investments" class="investment_wrapper animatedParent" data-sequence='500'>
-    <img src="/assets/images/our_network_image1.jpg" id="our_story_image" class="animated justIn " data-id='1'>
+  <div id="investments" class="investment_wrapper animatedParent" >
+    <img src="/assets/images/our_network_image1.jpg" id="our_story_image">
     <div class="investment_content ">
-      <div class="title investment_text animated justIn " data-id='2'>
+      <div class="title investment_text animated justIn ">
         Investors
       </div>
-      <div class="content investment_text investment_padding  animated justIn " data-id='2' [innerHtml]="investment_content">
+      <div class="content investment_text investment_padding  animated justIn" [innerHtml]="investment_content">
       </div>
     </div>
   </div>
